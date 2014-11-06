@@ -17,6 +17,7 @@ import com.example.hitac.model.UserPrefs;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
@@ -39,8 +40,12 @@ public class HomeActivity extends ActionBarActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		
+		int prepTime = getIntent().getIntExtra("userPrefsPT", 30);
+		
+		System.out.println("@@@@@@@@@@@@" + prepTime);
         
-        UserPrefs uf = new UserPrefs();
+        UserPrefs uf = new UserPrefs(8, prepTime, "Rachelsmolen", "School");
         
         ArrayList<Place> places = new ArrayList<Place>();
         places = uf.getPlaces();

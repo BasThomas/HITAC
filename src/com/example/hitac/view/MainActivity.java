@@ -1,5 +1,6 @@
 package com.example.hitac.view;
 
+import com.example.hitac.Question1;
 import com.example.hitac.R;
 import com.example.hitac.model.UserPrefs;
 
@@ -24,6 +25,7 @@ public class MainActivity extends ActionBarActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		getActionBar().hide();
 		
 		TextView welcome = (TextView)findViewById(R.id.textView2);
 		
@@ -46,6 +48,24 @@ public class MainActivity extends ActionBarActivity
 			{
 				Intent intent = new Intent(getApplicationContext(),
 						                   HomeActivity.class);
+				
+				intent.putExtra("userPrefsPT", up.getPrepTime());
+				intent.putExtra("userPrefsSH", up.getSleepHours());
+				
+				System.out.println(up.toString());
+				
+				startActivity(intent);
+			}
+		});
+		
+		Button startButton = (Button)findViewById(R.id.startButton);
+		startButton.setOnClickListener(new OnClickListener()
+        {
+			@Override
+			public void onClick(View v)
+			{
+				Intent intent = new Intent(getApplicationContext(),
+						                   Question1.class);
 				
 				intent.putExtra("userPrefsPT", up.getPrepTime());
 				intent.putExtra("userPrefsSH", up.getSleepHours());

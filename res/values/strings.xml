@@ -4,12 +4,22 @@
     <string name="app_name">HITAC</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">HITAC</string>
-    <string name="getButton">Skip</string>
-    <string name="startText">Please answer these 5 quick questions to get you started.</string>
     <string name="welcomeText">Welcome, user!</string>
+    <string name="startText">Please answer these 5 quick questions to get you started.</string>
+    <string name="question1">How long does it usually take you to get up in the morning?</string>
+    <string name="question2">Please answer these 5 quick questions to get you started.</string>
+    <string name="question3">Please answer these 5 quick questions to get you started.</string>
+    <string name="question4">Please answer these 5 quick questions to get you started.</string>
+    <string name="question5">Please answer these 5 quick questions to get you started.</string>
+    <string name="startButton">Start</string>
+    <string name="getButton">Skip</string>
+    <string name="finishButton">Finish</string>
+    <string name="continueButton">Continue</string>
     <string name="today">TODAY</string>
     <string name="tomorrow">TOMORROW</string>
     <string name="dayAfter">DAY AFTER TOMORROW</string>
     <string name="summary">Summary of today</string>
+    <string name="title_activity_question1">Question1</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
